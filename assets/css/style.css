@@ -1,0 +1,228 @@
+body {
+	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+	background-image: url(../images/white-waves.png);
+	background-repeat: repeat;
+	margin: 0;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+.container {
+	max-width: 960px;
+	width: 100%;
+	margin: 0 auto;
+	/*without this the image will be out of this container when float*/
+	clear: both;
+}
+
+
+#header {
+	background-color: #ffffff;
+	border-bottom: 1.5px solid #cccccc;
+	position: fixed;
+	width: 100%;
+	margin: 0 0 30px;
+	z-index: 99;
+	overflow: auto;
+
+}
+
+/* .wrap {
+	width: 100%;
+	max-width: 960px;
+	margin: 0 auto;
+	background-color: #ffffff;
+	overflow: auto;
+	clear: both;
+	z-index: 99;
+} */
+
+#myName {
+	color: #ffffff;
+	background-color: #4aaaa5;
+	font-family: 'Georgia', Times, Times New Roman, serif;
+	width: 300px;
+	height: 90px;
+	line-height: 90px;
+	text-align: center;
+	font-size: 30px;
+	font-weight: 700;
+	float: left;
+}
+
+nav {
+	margin-top: 30px;
+	float: right;
+	text-align: right;
+}
+
+nav a {
+	display: inline-block;
+	margin-left: 15px;
+	line-height: 18px;
+}
+
+nav a:hover {
+	background-color: #5ACCC6;
+}
+
+p {
+	color: #777777;
+}
+
+#text {
+	width: auto;
+	line-height: 30px;
+}
+
+a {
+	text-decoration: none;
+	color: #777777;
+}
+
+a:hover {
+	cursor: pointer;
+}
+
+
+
+#main-container {
+	padding-top: 110px;
+	min-height: calc(100vh - 70px);
+}
+
+#profileImg {
+	width: 25%;
+	height: auto;
+	float: left;
+	margin-right: 30px;
+}
+
+h1 {
+	font-family: 'Georgia', Times, Times New Roman, serif;
+	color: #4aaaa5;
+	display: block;
+	padding: 20px 0;
+	border-bottom: 1.5px solid #cccccc;
+	margin: 0;
+	margin-bottom: 10px;
+	font-size: 30px;
+}
+
+#footer {
+	background-color: #666666;
+	clear: both;
+	bottom: 0;
+	width: 100%;
+	padding-bottom: 10px;
+}
+
+h6 {
+	color: #ffffff;
+	text-align: center;
+	margin-bottom: 0;
+	margin-top: 0;
+	padding-top: 30px;
+	border-top: 5px solid #4aaaa5;
+}
+
+.content {
+	padding: 30px;
+	width: 100%;
+	max-width: 960px;
+	margin: 0 0 40px;
+	background-color: #ffffff;
+	overflow: auto;
+}
+
+form {
+	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+	color: #777777;
+	line-height: 1.5em;
+}
+
+input {
+	color: #777777;
+	width: 100%;
+}
+
+textarea {
+	color: #777777;
+	width: 100%;
+	min-height: 180px;
+}
+
+input[type=text],
+input[type=email],
+textarea {
+	border: 1px solid #dddddd;
+}
+
+
+button {
+	background-color: #4aaaa5;
+	color: #ffffff;
+	width: 105px;
+	border: 0;
+	padding: 8px;
+}
+
+button:hover {
+	cursor: pointer;
+	background-color: #FFA170;
+}
+
+
+
+.imageSection {
+	width: 50%;
+	float: left;
+	position: relative;
+	overflow: auto;
+	margin: 20px 0;
+}
+
+.imageSection img {
+	width: 90%;
+	height: auto;
+}
+
+#right {
+	position: relative;
+	left: 5%;
+}
+
+.banner {
+	position: absolute;
+	bottom: 50px;
+	left: 0%;
+	width: 90%;
+	padding: 20px 0;
+	color: #ffffff;
+	text-align: center;
+	background-color: #4aaaa5;
+	font-family: 'Georgia', Times, Times New Roman, serif;
+}
+
+/* .img-container:nth-child(odd) {
+	padding-right: 10px;
+} */
+
+
+@media screen and (max-width: 980px) {
+	.container {
+		width: 90%;
+
+	}
+
+	#main-container {
+		margin-left: 45px;
+		width: 70%;
+		position: relative;
+	}
+
+}
+
+@media screen and (max-width: 768px) {}
