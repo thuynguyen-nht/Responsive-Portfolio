@@ -1,9 +1,18 @@
 body {
-	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
-	background-image: url(../images/white-waves.png);
-	background-repeat: repeat;
+	background: url("../images/right-cat.jpg")no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
 	margin: 0;
 }
+
+/* body {
+	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+	background-image: url(../images/Simple.jpg);
+	background-repeat: repeat;
+	margin: 0;
+}*/
 
 * {
 	box-sizing: border-box;
@@ -26,26 +35,17 @@ body {
 	margin: 0 0 30px;
 	z-index: 99;
 	overflow: auto;
+	opacity: 0.95;
 
 }
-
-/* .wrap {
-	width: 100%;
-	max-width: 960px;
-	margin: 0 auto;
-	background-color: #ffffff;
-	overflow: auto;
-	clear: both;
-	z-index: 99;
-} */
 
 #myName {
 	color: #ffffff;
 	background-color: #4aaaa5;
 	font-family: 'Georgia', Times, Times New Roman, serif;
 	width: 300px;
-	height: 90px;
-	line-height: 90px;
+	height: 80px;
+	line-height: 80px;
 	text-align: center;
 	font-size: 30px;
 	font-weight: 700;
@@ -85,8 +85,6 @@ a {
 a:hover {
 	cursor: pointer;
 }
-
-
 
 #main-container {
 	padding-top: 110px;
@@ -132,9 +130,12 @@ h6 {
 	padding: 30px;
 	width: 100%;
 	max-width: 960px;
+	box-sizing: border-box;
 	margin: 0 0 40px;
 	background-color: #ffffff;
 	overflow: auto;
+	opacity: 0.95;
+
 }
 
 form {
@@ -160,7 +161,6 @@ textarea {
 	border: 1px solid #dddddd;
 }
 
-
 button {
 	background-color: #4aaaa5;
 	color: #ffffff;
@@ -173,8 +173,6 @@ button:hover {
 	cursor: pointer;
 	background-color: #FFA170;
 }
-
-
 
 .imageSection {
 	width: 50%;
@@ -213,16 +211,59 @@ button:hover {
 
 @media screen and (max-width: 980px) {
 	.container {
-		width: 90%;
+		width: 100%;
+		box-sizing: border-box;
+		padding: 0 40px;
+	}
 
+	.content {
+		width: 80%;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.content {
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 640px) {
+	.container {
+		padding: 0;
+	}
+
+	#myName {
+		/* clear: both; */
+		width: 100%;
+	}
+
+	nav {
+		width: 100%;
+		margin: 0 auto;
+		height: 60px;
+		line-height: 60px;
+		text-align: center;
 	}
 
 	#main-container {
-		margin-left: 45px;
-		width: 70%;
-		position: relative;
+		padding: 160px 15px;
 	}
 
-}
+	#profileImg {
+		width: 100%;
+	}
 
-@media screen and (max-width: 768px) {}
+	.imageSection {
+		width: 100%;
+	}
+
+	.imageSection img,
+	.banner {
+		width: 100%;
+
+	}
+
+	#right {
+		left: 0;
+	}
+}
