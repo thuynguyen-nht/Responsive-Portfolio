@@ -175,38 +175,34 @@ button:hover {
 }
 
 .imageSection {
-	width: 50%;
-	float: left;
+	width: 48%;
+	/* float: left; */
 	position: relative;
 	overflow: auto;
 	margin: 20px 0;
 }
 
-.imageSection img {
-	width: 90%;
-	height: auto;
+.row {
+	display: flex;
+	justify-content: space-between;
 }
 
-#right {
-	position: relative;
-	left: 5%;
+.imageSection img {
+	width: 100%;
+	height: auto;
 }
 
 .banner {
 	position: absolute;
 	bottom: 50px;
 	left: 0%;
-	width: 90%;
+	width: 100%;
 	padding: 20px 0;
 	color: #ffffff;
 	text-align: center;
 	background-color: #4aaaa5;
 	font-family: 'Georgia', Times, Times New Roman, serif;
 }
-
-/* .img-container:nth-child(odd) {
-	padding-right: 10px;
-} */
 
 
 @media screen and (max-width: 980px) {
@@ -249,21 +245,26 @@ button:hover {
 		padding: 160px 15px;
 	}
 
-	#profileImg {
-		width: 100%;
+	.row {
+		flex-direction: column;
+
 	}
+
+	/* #profileImg {
+		width: 100%;
+	} */
 
 	.imageSection {
 		width: 100%;
 	}
 
-	.imageSection img,
+	/* .imageSection img,
 	.banner {
 		width: 100%;
 
-	}
+	} */
 
-	#right {
+	/* #right {
 		left: 0;
-	}
+	} */
 }
