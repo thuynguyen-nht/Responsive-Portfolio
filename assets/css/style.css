@@ -241,6 +241,10 @@ button:hover {
 		text-align: center;
 	}
 
+	#profileImg {
+		width: 100%;
+	}
+
 	#main-container {
 		padding: 160px 15px;
 	}
@@ -250,21 +254,8 @@ button:hover {
 
 	}
 
-	/* #profileImg {
-		width: 100%;
-	} */
-
 	.imageSection {
 		width: 100%;
 	}
 
-	/* .imageSection img,
-	.banner {
-		width: 100%;
-
-	} */
-
-	/* #right {
-		left: 0;
-	} */
 }
